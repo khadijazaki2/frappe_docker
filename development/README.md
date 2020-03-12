@@ -156,6 +156,7 @@ use the following command:
 
 ```shell
 bench get-app erpnext https://gitlab.com/erp-rawdah/erpnext-rawdah --branch master
+bench --site localhost install-app erpnext
 bench start
 ```
 
