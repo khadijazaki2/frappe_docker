@@ -46,7 +46,7 @@ Notes:
 Run the following commands in the terminal inside the container. You might need to create a new terminal in VSCode.
 
 ```shell
-bench init --skip-redis-config-generation --frappe-branch version-12 frappe-bench
+bench init --frappe-path https://gitlab.com/erp-rawdah/frappe-rawdah --skip-redis-config-generation --frappe-branch develop frappe-bench
 cd frappe-bench
 ```
 
@@ -147,6 +147,16 @@ And enter the interactive shell for the development container with the following
 
 ```shell
 docker exec -e "TERM=xterm-256color" -w /workspace/development -it devcontainer_frappe_1 bash
+```
+
+
+## Installing app and setting up
+
+use the following command:
+
+```shell
+bench get-app erpnext https://gitlab.com/erp-rawdah/erpnext-rawdah --branch master
+bench start
 ```
 
 ### Visual Studio Code Python Debugging
